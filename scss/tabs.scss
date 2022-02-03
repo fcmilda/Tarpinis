@@ -1,0 +1,38 @@
+#tabs {
+  background: linear-gradient(
+      270deg,
+      rgba(102, 150, 226, 0.33),
+      rgba(226, 120, 102, 0.53)
+    ),
+    url("/app/images/christoffer-engstrom-503481-unsplash.png");
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  #tabs-1 {
+    display: flex;
+    flex-direction: column;
+    button {
+      width: 100px;
+      height: 100px;
+      border: none;
+      margin-bottom: 20px;
+    }
+  }
+
+  .tabsSection {
+    margin-left: 50px;
+    display: none;
+    .display {
+      display: flex;
+    }
+    h2 {
+      color: white;
+      font-size: 36px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+#social-media {
+  background-color: white;
+  margin: 19px 0 19px 0;
+  display: flex;
+  #social-1 {
+    width: 40%;
+    margin-right: 90px;
+  }
+  h3 {
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #86878b;
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  #social-2 {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(102, 150, 226);
+  }
+}

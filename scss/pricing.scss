@@ -1,0 +1,102 @@
+#pricing {
+  background: #6696e2;
+  width: 100%;
+  //   height: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  h2 {
+    font-size: 36px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+  img {
+    height: 2px;
+    width: 64px;
+    margin-bottom: 30px;
+  }
+  .flex-clmn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    p {
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 25px;
+      padding-bottom: 50px;
+    }
+  }
+  .swiper {
+    max-width: 1000px;
+    // height: 300px;
+    .swiper-wrapper {
+      display: flex;
+      align-items: flex-end;
+      .swiper-slide {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .plan {
+          text-align: center;
+          background-color: #323232;
+          width: 300px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          padding: 14px 30px 19px 30px;
+          h5 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 14px;
+          }
+          .price {
+            font-size: 30px;
+            font-weight: 400;
+          }
+          span {
+            font-size: 94px;
+          }
+          p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+          }
+        }
+        .green-line {
+          height: 6px;
+          background-color: #41d395;
+          width: 300px;
+          font-size: 14px;
+          text-align: center;
+        }
+        .wide {
+          height: 40px;
+          line-height: 40px;
+        }
+        .benefits {
+          color: #86878b;
+          background-color: #ffffff;
+          width: 300px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          margin-bottom: 50px;
+          li {
+            list-style-type: none;
+            font-size: 14px;
+            line-height: 28px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+}
