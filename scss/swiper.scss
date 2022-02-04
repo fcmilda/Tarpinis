@@ -35,18 +35,45 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        .review {
-          background-color: #6696e2;
-          border-radius: 8px;
-          color: white;
-          padding: 18px 20px;
-        }
-        .customer-info {
-          display: flex;
-          .customer-name {
+        .customer {
+          margin: 0 10%;
+          .review {
+            font-size: 16px;
+            background-color: #6696e2;
+            border-radius: 8px;
+            color: white;
+            padding: 18px 20px;
+            position: relative;
+            &::after {
+              content: "";
+              width: 0;
+              height: 0;
+              border-left: 10px solid transparent;
+              border-right: 10px solid transparent;
+              border-top: 10px solid #6696e2;
+              position: absolute;
+              top: 100%;
+              left: 10%;
+            }
+          }
+          .customer-info {
+            margin-top: 19px;
+            margin-bottom: 86px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            .customer-name {
+              margin-left: 20px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              h5 {
+                font-size: 20px;
+                font-weight: 400;
+              }
+              p {
+                color: #86878b;
+                font-size: 14px;
+              }
+            }
           }
         }
       }

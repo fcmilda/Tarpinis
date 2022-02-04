@@ -1,26 +1,35 @@
 "use strict";
 
-// for (let i = 0; i < sections.length; i++) {
-//   buttons[i].addEventListener("click", function () {
-//     sections[i].classList.remove("display");
-//   });
-// }
+const tabsSections = document.getElementsByClassName("tabsSection");
+const tabsButtons = document.getElementsByClassName("tabsButton");
+const tabsButtonsText = document.getElementsByClassName("buttonText");
 
-// let element = document.getElementsByClassName("tabsSection")[index];
-// element.classList.add("display");
+for (let i = 0; i < tabsButtons.length; i++) {
+  tabsButtons[i].addEventListener("click", function () {
+    for (let i = 0; i < tabsSections.length; i++) {
+      tabsSections[i].classList.remove("js-display");
+      tabsButtons[i].classList.remove("js-active");
+      tabsButtonsText[i].classList.remove("js-opacity");
+    }
 
-const buttons = document.getElementsByClassName("tabsButton");
-
-function changeContent(index) {
-  const sections = document.getElementsByClassName("tabsSection");
-
-  for (let i = 0; i < sections.length; i++) {
-    sections[i].classList.remove("display");
-  }
-  let element = document.getElementsByClassName("tabsSection")[index];
-  element.classList.add("display");
+    tabsSections[i].classList.add("js-display");
+    tabsButtons[i].classList.add("js-active");
+    tabsButtonsText[i].classList.add("js-opacity");
+  });
 }
 
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", changeContent);
+const navElements = document.getElementsByClassName("nav");
+const navBar = document.getElementsByTagName("nav")[0];
+for (let i = 0; i < navElements.length; i++) {
+  navElements[i].addEventListener("mouseover", function () {
+    for (let i = 0; i < navElements.length; i++) {
+      navElements[i].classList.remove("js-active-nav");
+    }
+    navElements[i].classList.add("js-active-nav");
+  });
+  navElements[i].addEventListener("mouseout", function () {
+    for (let i = 0; i < navElements.length; i++) {
+      navElements[i].classList.add("js-active-nav");
+    }
+  });
 }

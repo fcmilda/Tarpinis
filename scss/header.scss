@@ -13,6 +13,7 @@ header {
     text-decoration: none;
     margin-right: 38px;
     position: relative;
+    opacity: 50%;
   }
   nav a:nth-of-type(5),
   nav a:nth-of-type(6) {
@@ -33,4 +34,9 @@ header {
   nav a:hover::before {
     opacity: 1;
   }
+}
+
+.js-active-nav {
+  opacity: 100%;
+  transition: 0.5s;
 }

@@ -1,16 +1,17 @@
 #black-section {
   background: #1c1c1c;
   width: 100%;
-  height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
   .right {
+    margin-top: 100px;
+    margin-bottom: 100px;
     width: 50%;
     line-height: 1.3em;
     h2 {
-      width: 50%;
+      width: 60%;
       line-height: 1.4em;
     }
     p {

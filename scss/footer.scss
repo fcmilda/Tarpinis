@@ -1,0 +1,19 @@
+footer {
+  background-color: #1c1c1c;
+  height: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  #social {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    i {
+      color: #e27866;
+    }
+  }
+  p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+  }
+}

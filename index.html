@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="app/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,22 +13,24 @@
     <title>Cheshire County</title>
     <script src="https://kit.fontawesome.com/a5e0cd13ac.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
     <script src="swiper.js" defer></script>
     <script src="script.js" defer></script>
 <body>
   <header class="container">
       <a href="#"><img src="app/images/cheshire-county-hygiene-services.svg" alt="Cheshire County Logo"></a>
       <nav>
-        <a href="#Features">Features</a>
-        <a href="#About">About</a>
-        <a href="#Pricing">Pricing</a>
-        <a href="#Reviews">Reviews</a>
-        <a href="#Contact">Contact</a>
-        <a id="burger" href="#">
+        <a class="nav js-active-nav" href="#tabs">Features</a>
+        <a class="nav js-active-nav" href="#black-section">About</a>
+        <a class="nav js-active-nav" href="#pricing">Pricing</a>
+        <a class="nav js-active-nav" href="#swiper">Reviews</a>
+        <a class="nav js-active-nav" href="#contact">Contact</a>
+        <a class="nav js-active-nav" id="burger" href="#">
           <i class="fa fa-bars"></i>
         </a>
       </nav>
   </header>
+
   <main class="container">
       <section id="main-1">
         <img src="app/images/cheshire-county-hygiene-services.svg" alt="Cheshire County Logo">
@@ -62,30 +64,68 @@
         </div>
       </section>
   </main>
+
   <section class="container" id="social-media">
     <div id="social-1">
       <h3>Social Media</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
     </div>
     <div id="social-2">
-      <a href=""><img src="app/images/facebook-logo.png"></a>
-      <a href=""><img src="app/images/instagram-logo.png"></a>
-      <a href=""><img src="app/images/twitter.png"></a>
-      <a href=""><img src="app/images/pinterest.png"></a>
-      <a href=""><img src="app/images/wifi.svg" height="30px"></a>
+      <a href=""><i class="fab fa-facebook-f fa-lg"></i></a>
+      <a href=""><i class="fab fa-instagram fa-lg"></i></a>
+      <a href=""><i class="fab fa-twitter fa-lg"></i></a>
+      <a href=""><i class="fab fa-pinterest-p fa-lg"></i></a>
+      <a href=""><i class="fas fa-rss fa-lg"></i></a>
     </div>
   </section>
 
   <section class="container" id="tabs">
     <div id="tabs-1">
-      <button class="tabsButton">REGISTER</button>
-      <button class="tabsButton">APPLY</button>
-      <button class="tabsButton">RECEIVE</button>
+      <button class="tabsButton js-active"><p class="buttonText js-opacity">REGISTER</p></button>
+      <button class="tabsButton"><p class="buttonText">APPLY</p></button>
+      <button class="tabsButton"><p class="buttonText" >RECEIVE</p></button>
     </div>
-    <div id="tabs-2">
-      <section class="tabsSection">
+      <section class="tabsSection js-display">
         <div class="left">
           <h2>1-Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+            amet
+            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+            parturient montes.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+          </p>
+          </div>
+        <div class="right">
+          <div class="photos">
+            <div class="img"></div>
+            <div class="img"></div>
+            
+          </div>
+        <div class="img-2"></div>
+        </div>
+      </section>
+
+      <section class="tabsSection">
+        <div class="left">
+          <h2>2-Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+            amet
+            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+            parturient montes.
+          </p>
+        </div>
+        <div class="right">
+          <div class="photos">
+            <div class="img"></div>
+            <div class="img"></div>
+        
+          </div>
+          <div class="img-2"></div>
+        </div>
+      </section>
+
+      <section class="tabsSection">
+        <div class="left">
+          <h2>3-Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
             amet
             lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
@@ -94,27 +134,12 @@
         </div>
         <div class="right">
           <div class="photos">
-            <img src="app/images/photo-1493409137604-0901c55e4456.png">
-            <img src="app/images/photo-1543364195-bfe6e4932397.png">
+            <div class="img"></div>
+            <div class="img"></div>
+        
           </div>
-          <img src="app/images/photo-1448387473223-5c37445527e7.png">
+          <div class="img-2"></div>
         </div>
-      </section>
-
-      <section class="tabsSection">
-        <h2>2-Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
-          amet
-          lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
-          parturient montes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-      </section>
-
-      <section class="tabsSection">
-        <h2>3 Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
-          amet
-          lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
-          parturient montes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
       </section>
     </div>
   </section>
@@ -299,7 +324,7 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide slide-4">
+      <!-- <div class="swiper-slide slide-4">
         <div class="customer">
           <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat
             similique odio
@@ -338,7 +363,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -349,5 +374,32 @@
   </div>
 </section>
 
+<section class="container" id="contact">
+  <h2>CONTACT US</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <form class="contact-form" action="">
+    <input id="details" type="text" name="fname" placeholder="First name">
+    <input id="details" type="text" name="lname" placeholder="Last name">
+    <input id="details" type="number" name="number" placeholder="Phone number">
+  
+    <div id="type">
+      <input id="radio" type="radio" value="personal" name="type">
+      <label for="personal">PERSONAL</label>
+      <input id="radio" type="radio" value="company" name="type">
+      <label for="company">COMPANY</label>
+    </div>
+    <button id="send">SEND</button>
+  </form>
+</section>  
+<footer class="container">
+  <div id="social">
+    <a href=""><i class="fab fa-facebook-f fa-lg"></i></a>
+    <a href=""><i class="fab fa-instagram fa-lg"></i></a>
+    <a href=""><i class="fab fa-twitter fa-lg"></i></a>
+    <a href=""><i class="fab fa-pinterest-p fa-lg"></i></a>
+    <a href=""><i class="fas fa-rss fa-lg"></i></a>
+  </div>
+  <p>© 2019 Cheshire County</p>
+</footer>
 </body>
 </html>
