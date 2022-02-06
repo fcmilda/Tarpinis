@@ -17,3 +17,14 @@ footer {
     font-size: 18px;
   }
 }
+
+@media (max-width: 400px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    #social {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+}

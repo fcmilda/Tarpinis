@@ -29,3 +29,17 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  #social-media {
+    flex-direction: column;
+    #social-1 {
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+    #social-2 {
+      width: 100%;
+    }
+  }
+}

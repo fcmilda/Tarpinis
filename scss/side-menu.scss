@@ -1,0 +1,37 @@
+.side-menu {
+  display: flex;
+  align-items: left;
+  padding: 20px;
+  padding-left: 35px;
+  flex-direction: column;
+  height: 100vh;
+  background: #1c1c1c;
+
+  position: fixed;
+  top: 72px;
+  right: 0;
+  z-index: 200;
+  transition: 0.5s;
+  transform: translateX(600px);
+  .nav2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 38px;
+    position: relative;
+    opacity: 1;
+  }
+  @media (min-width: 820px) {
+    display: none;
+  }
+}
+
+.scrolled {
+  opacity: 85%;
+}
+
+.on {
+  transform: translateX(0px);
+}

@@ -1,14 +1,13 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper("#swiper .swiper", {
   // Optional parameters
   direction: "horizontal",
-  loop: false,
-  speed: 1000,
-  autoplay: {
-    delay: 500,
-    disableOnInteraction: false,
-  },
+  loop: true,
   slidesPerView: 1,
   spaceBetween: 20,
+  speed: 1500,
+  autoplay: {
+    delay: 3000,
+  },
   allowSlideNext: true,
   allowSlidePrev: true,
   breakpoints: {
@@ -17,19 +16,16 @@ const swiper = new Swiper(".swiper", {
       slidesPerGroup: 2,
       allowSlideNext: true,
       allowSlidePrev: true,
-      autoplay: {
-        delay: 500,
-        disableOnInteraction: false,
-      },
+      autoplay: false,
     },
     1000: {
       slidesPerView: 3,
       slidesPerGroup: 3,
-      allowSlideNext: false,
-      allowSlidePrev: false,
-      //   autoplay: {
-      //     disableOnInteraction: true,
-      //   },
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      autoplay: {
+        disableOnInteraction: true,
+      },
     },
   },
 
@@ -42,5 +38,69 @@ const swiper = new Swiper(".swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+const swiper2 = new Swiper("#pricing .swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  speed: 1500,
+
+  allowSlideNext: true,
+  allowSlidePrev: true,
+  breakpoints: {
+    600: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      autoplay: {
+        delay: 3000,
+      },
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      autoplay: false,
+    },
+
+    1000: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      autoplay: {
+        disableOnInteraction: true,
+      },
+    },
+    1200: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      autoplay: {
+        disableOnInteraction: true,
+      },
+    },
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
   },
 });

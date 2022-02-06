@@ -38,7 +38,7 @@
         flex-direction: column;
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
         .plan {
           text-align: center;
           background-color: #323232;
@@ -90,11 +90,39 @@
       }
     }
   }
+  .swiper-pagination-bullet {
+    border: 3px solid #b9bec5;
+    width: 15px;
+    height: 15px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #d2d8e0;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #92a3be;
+  }
+  .swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+  }
 
   @media (min-width: 1000px) {
     .swiper-button-next,
     .swiper-button-prev {
       display: none;
+    }
+  }
+  @media (max-width: 1000px) {
+    .swiper {
+      max-width: 500px;
+    }
+  }
+  @media (max-width: 400px) {
+    .swiper {
+      max-width: 300px;
     }
   }
 }
