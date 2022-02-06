@@ -4,7 +4,7 @@
       rgba(102, 150, 226, 0.33),
       rgba(226, 120, 102, 0.53)
     ),
-    url("Tarpinis/app/images/christoffer-engstrom-503481-unsplash.png");
+    url("/Tarpinis/app/images/christoffer-engstrom-503481-unsplash.png");
   background-position: bottom;
   background-size: cover;
   width: 100%;
@@ -64,14 +64,14 @@
       position: relative;
     }
     .img:nth-of-type(1) {
-      background-image: url("Tarpinis/app/images/photo-1493409137604-0901c55e4456.png");
+      background-image: url("/Tarpinis/app/images/photo-1493409137604-0901c55e4456.png");
     }
     .img:nth-of-type(2) {
-      background-image: url("Tarpinis/app/images/photo-1543364195-bfe6e4932397.png");
+      background-image: url("/Tarpinis/app/images/photo-1543364195-bfe6e4932397.png");
     }
     .img-2 {
       margin-top: 20px;
-      background-image: url("Tarpinis/app/images/photo-1448387473223-5c37445527e7.png");
+      background-image: url("/Tarpinis/app/images/photo-1448387473223-5c37445527e7.png");
       object-fit: cover;
       width: 362px;
       height: 177px;
