@@ -82,3 +82,25 @@ for (let i = 0; i < sideMenuElements.length; i++) {
 //     this.classList.add("selected");
 //   });
 // }
+
+const f1name = document.getElementsByTagName("input")[0];
+const f1lastname = document.getElementsByTagName("input")[1];
+const f1phone = document.getElementsByTagName("input")[2];
+const buttonGetStarted = document.getElementById("getstarted");
+
+buttonGetStarted.addEventListener("click", function () {
+  if (f1name.value === "" || f1lastname.value === "" || f1phone.value === "") {
+    alert("Iveskite informacija");
+  }
+});
+
+const f2name = document.getElementsByTagName("input")[5];
+const f2lastname = document.getElementsByTagName("input")[6];
+const f2phone = document.getElementsByTagName("input")[7];
+const buttonSend = document.getElementById("send");
+
+buttonSend.addEventListener("click", function () {
+  if (f2name.value === "" || f2lastname.value === "" || f2phone.value === "") {
+    alert("Iveskite informacija");
+  }
+});
